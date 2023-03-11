@@ -109,8 +109,8 @@ body {
 .parts {
     float: left;
     margin-bottom: 10vw;
-    margin-left: 8.5vw;
-    margin-right: 8.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     width: 20vw;
     height: 20vw;
     background-color: rgba(241, 241, 241, 0.507);
@@ -124,7 +124,21 @@ body {
     float: left;
     margin-bottom: 10vw;
     margin-left: 0;
-    margin-right: 8.5vw;
+    margin-right: 10vw;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgba(241, 241, 241, 0.507);
+    backdrop-filter: blur(14px) saturate(150%);
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+.parts3 {
+    float: left;
+    margin-bottom: 10vw;
+    margin-left: 0;
+    margin-right: 0;
     width: 20vw;
     height: 20vw;
     background-color: rgba(241, 241, 241, 0.507);
