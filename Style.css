@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("./images/Part\ I\ -\ Gandalf\ Under\ the\ Break\ Of\ Day.JPG");
+    background-repeat: no-repeat;
+    /*不平铺*/
+    background-position: center top;
+    /*位置: 水平居中，垂直靠上*/
+    background-size: cover;
+    /*背景大小，禁掉缩放 */
+    background-attachment: fixed;
+    /*不滚动*/
+}
+
+/*清除网页所存在的内外边距*/
+
+.w {
+    width: 94%;
+    margin: auto;
+    /*版心盒子*/
+}
+
+.header {
+    height: 50px;
+    /*background-color: aqua;*/
+    margin: 20px 3%;
+    position: fixed;
+    z-index: 2;
+    /*先上下，后左右*/
+    /*导航栏核心部分，用于控制上下和左右间距*/
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.setting {
+    float: right;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    /*保证位于页面层级最高点*/
+}
+
+.navtext {
+    float: left;
+    line-height: 50px;
+    margin-left: 30px;
+    z-index: 2;
+}
+
+.navback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.5);
+    box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(14px) saturate(150%);
+    z-index: 2;
+    /*背景虚化*/
+}
+
+.midtext {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -550.78px;
+    /*距离左侧50% + 往回自身的一半 = 整个文本 / 块 位置居中*/
+    color: aliceblue;
+    font-family: "Cascadia Code";
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cont {
+    background-color: rgba(250, 250, 250, 0.8);
+    backdrop-filter: blur(14px) saturate(150%);
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 52%;
+    text-align: center;
+}
+
+.conttext1 {
+    margin: 10% auto;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.parts {
+    float: left;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 20%;
+    height: 500px;
+    background-color: rgba(241, 241, 241, 0.507);
+    backdrop-filter: blur(14px) saturate(150%);
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+.parts2 {
+    float: left;
+    margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 10%;
+    width: 20%;
+    height: 500px;
+    background-color: rgba(241, 241, 241, 0.507);
+    backdrop-filter: blur(14px) saturate(150%);
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+/*属性顺序结构： 1、布局定位属性（display, position, float...）
+                2、自身属性（width, height, margin...）
+                3、文本属性
+                4、其他属性
+    background-image: url("./images/Part\ I\ -\ Gandalf\ Under\ the\ Break\ Of\ Day.JPG");
+    background-repeat: no-repeat;
+    不平铺
+    background-position: center top;
+    位置: 水平居中，垂直靠上
+    background-size: cover;
+    背景大小，禁掉缩放
+    background-attachment: fixed;
+    不滚动          
+*/
